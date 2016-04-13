@@ -1,6 +1,6 @@
-<h1>Let's Try AJAX - Jquery Way</h1>
+<h1>Let's Try AJAX in Rails</h1>
 
-<%= form_for [@product, Product.new], remote: true do |f| %>
+<%= form_for [@product, Product.new] do |f| %>
 		<ul>
 			<li>
 				<%= f.text_area :name, placeholder: "Post your product here" %>

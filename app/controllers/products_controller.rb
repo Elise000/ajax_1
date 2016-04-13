@@ -19,6 +19,7 @@ class ProductsController < ApplicationController
 		respond_to do |format|
 			format.html { redirect_to root_path }
 			format.js #render a file in views products/create.js/erb
+			format.json {render json: @product}
 		end
 	end
 
