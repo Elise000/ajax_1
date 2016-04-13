@@ -1,0 +1,19 @@
+<h1>Let's Try AJAX - Jquery Way</h1>
+
+<%= form_for [@product, Product.new], remote: true do |f| %>
+		<ul>
+			<li>
+				<%= f.text_area :name, placeholder: "Post your product here" %>
+			</li>
+			<li>
+				<%= f.text_area :price, placeholder: "Set a price here" %>
+			</li>
+			<li>
+				<%= f.submit 'Submit', class: 'button' %>
+			</li>
+		</ul>
+<% end %>
+
+<ol id='products'>
+	<%= render @products %>
+</ol>

@@ -1,0 +1,5 @@
+<li id='<%= product.id %>' >
+	<%= product.name %>
+	<span class='price'><%= product.price %></span>
+	<%= link_to "Delete", product_path(product), method: 'delete', remote: true %>
+</li>
